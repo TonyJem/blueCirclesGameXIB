@@ -17,7 +17,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZKR-Pd-bse" customClass="CircleView" customModule="blueCirclesGameXIB" customModuleProvider="target">
-                                <rect key="frame" x="99" y="235" width="240" height="128"/>
+                                <rect key="frame" x="65" y="104" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UZl-eN-kCX" customClass="CircleView" customModule="blueCirclesGameXIB" customModuleProvider="target">
+                                <rect key="frame" x="225" y="104" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Hb-VA-9sJ" customClass="CircleView" customModule="blueCirclesGameXIB" customModuleProvider="target">
+                                <rect key="frame" x="65" y="267" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GhG-s7-u12" customClass="CircleView" customModule="blueCirclesGameXIB" customModuleProvider="target">
+                                <rect key="frame" x="225" y="267" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yTh-ol-ROz" customClass="CircleView" customModule="blueCirclesGameXIB" customModuleProvider="target">
+                                <rect key="frame" x="65" y="445" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AOu-9g-Ajh" customClass="CircleView" customModule="blueCirclesGameXIB" customModuleProvider="target">
+                                <rect key="frame" x="225" y="445" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JKM-P0-qXO" customClass="CircleView" customModule="blueCirclesGameXIB" customModuleProvider="target">
+                                <rect key="frame" x="157" y="611" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
