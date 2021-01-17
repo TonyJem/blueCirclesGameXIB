@@ -11,9 +11,11 @@ class ViewController: UIViewController {
     @IBOutlet private weak var circle7: CircleView!
     @IBOutlet private var circles: [CircleView]!
     
+    var activeCircles = [UIView]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        activeCircles = circles
     @IBAction func panCircle1Action(_ gesture: UIPanGestureRecognizer) {
     }
     
