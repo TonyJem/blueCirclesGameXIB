@@ -3,6 +3,7 @@ import UIKit
 @IBDesignable class CircleView: UIView {
     
     @IBOutlet weak var xibCircleBody: UIView!
+    @IBOutlet weak var circleLabel: UILabel!
     
     private var workingView: UIView!
     private var xibName: String = "CircleView"
