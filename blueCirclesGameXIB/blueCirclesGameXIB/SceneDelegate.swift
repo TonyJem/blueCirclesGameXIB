@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  blueCirclesGameXIB
-//
-//  Created by Office-iMac on 2021-01-17.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
