@@ -1,15 +1,18 @@
 import UIKit
 
-class CircleView: UIView {
+@IBDesignable class CircleView: UIView {
     
     @IBOutlet weak var xibCircleBody: UIView!
     
     private var workingView: UIView!
     private var xibName: String = "CircleView"
     
-    private var radius: CGFloat = 50 {
+    @IBInspectable private var radius: CGFloat = 50 {
         didSet{
+            self.frame.size.width = 2 * radius
+            self.frame.size.height = 2 * radius
             self.layer.zPosition += 5
+            xibCircleBody.layer.cornerRadius = radius
         }
     }
     
@@ -59,15 +62,12 @@ class CircleView: UIView {
         let commonArea = otherCircle.area + area
         let newRadius = (commonArea/CGFloat.pi).squareRoot()
         otherCircle.isHidden = true
-        radius = newRadius
-        setSize(with: radius)
+        setRadius(to: newRadius)
         setBackGroundColor(with: .blue)
     }
     
-    private func setSize(with radius: CGFloat) {
-        self.frame.size.width = radius * 2
-        self.frame.size.height = radius * 2
-        xibCircleBody.layer.cornerRadius = radius
+    private func setRadius(to newRadius: CGFloat) {
+        radius = newRadius
     }
     
     private func setBackGroundColor(with newColor: UIColor) {
