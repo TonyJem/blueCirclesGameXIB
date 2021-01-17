@@ -1,7 +1,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet private weak var circle1: CircleView!
     @IBOutlet private weak var circle2: CircleView!
     @IBOutlet private weak var circle3: CircleView!
@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         activeCircles = circles
-//        roundCorners(for: activeCircles)
+        //        roundCorners(for: activeCircles)
     }
     
     @IBAction func panCircle1Action(_ gesture: UIPanGestureRecognizer) {
@@ -64,9 +64,46 @@ class ViewController: UIViewController {
         
         gesture.setTranslation(.zero, in: view)
         guard gesture.state == .ended else { return }
+        
+        hideIfNeeded(movedCircle: justMovedView)
     }
     
-    @IBAction func panCircle7Action(_ sender: UIPanGestureRecognizer) {
+    private func hideIfNeeded(movedCircle: CircleView) {
+        for circle in activeCircles {
+            if circle == movedCircle {
+                continue
+            }
+            let deltaX = circle.center.x - movedCircle.center.x
+            let deltaY = circle.center.y - movedCircle.center.y
+            let distanceBetweenCenters = (pow(deltaX, 2) + pow(deltaY, 2)).squareRoot()
+            
+            if distanceBetweenCenters < circle.frame.size.width / 4 {
+                movedCircle.isHidden = true
+                removeFromCircles(view: movedCircle)
+                increaseSize(for: circle)
+                changeColor(for: circle)
+                break
+            }
+        }
     }
     
+    private func removeFromCircles(view: CircleView) {
+        for (index, circle) in activeCircles.enumerated() {
+            if circle == view {
+                activeCircles.remove(at: index)
+                break
+            }
+        }
+    }
+    
+    private func increaseSize(for circle: CircleView) {
+        let newSize = circle.frame.size.width * 1.2
+        circle.frame.size.width = newSize
+        circle.frame.size.height = newSize
+        circle.layer.cornerRadius = newSize / 2
+    }
+    
+    private func changeColor(for circle: CircleView) {
+        circle.backgroundColor = UIColor.blue
+    }
 }
