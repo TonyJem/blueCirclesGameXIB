@@ -90,14 +90,26 @@ class ViewController: UIViewController {
     }
     
     private func callGameDidFinishAlert() {
-        // create the alert
-        let alert = UIAlertController(title: "Congratulations, You did all !!!", message: "Would you like to play that incredible game again?", preferredStyle: UIAlertController.Style.alert)
-
-        // add the actions (buttons)
-        alert.addAction(UIAlertAction(title: "Play Again!", style: UIAlertAction.Style.default, handler: nil))
-        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
-
-        // show the alert
+        
+        let alert = UIAlertController(
+            title: "Congratulations, You did all !!!",
+            message: "Would you like to play that incredible game again?",
+            preferredStyle: UIAlertController.Style.alert
+        )
+        
+        alert.addAction(UIAlertAction(
+            title: "Play Again!",
+            style: UIAlertAction.Style.default,
+            handler: { _ in
+                print("Play Again!")
+            }
+        ))
+        
+        alert.addAction(UIAlertAction(
+                            title: "Cancel",
+                            style: UIAlertAction.Style.cancel,
+                            handler: nil))
+        
         self.present(alert, animated: true, completion: nil)
     }
 }
