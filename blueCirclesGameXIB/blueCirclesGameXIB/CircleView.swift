@@ -8,6 +8,15 @@ import UIKit
     private var workingView: UIView!
     private var xibName: String = "CircleView"
     
+    private var curentValue: Int {
+        get {
+            guard let curentValue = Int(circleLabel.text!) else { return 0 }
+            return curentValue
+        }
+        set(curentValue) {
+            circleLabel.text = String(curentValue)
+        }
+    }
     @IBInspectable private var radius: CGFloat = 50 {
         didSet{
             self.frame.size.width = 2 * radius
@@ -65,6 +74,11 @@ import UIKit
         otherCircle.isHidden = true
         setRadius(to: newRadius)
         setBackGroundColor(with: .blue)
+    }
+    
+    private func addValue(from otherCircle: CircleView) {
+        let newValue = curentValue + otherCircle.curentValue
+        curentValue = newValue
     }
     
     private func setRadius(to newRadius: CGFloat) {
