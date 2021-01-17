@@ -2,29 +2,37 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var circle1: CircleView!
-    @IBOutlet weak var circle2: CircleView!
-    @IBOutlet weak var circle3: CircleView!
-    @IBOutlet weak var circle4: CircleView!
-    @IBOutlet weak var circle5: CircleView!
-    @IBOutlet weak var circle6: CircleView!
-    @IBOutlet weak var circle7: CircleView!
-    @IBOutlet var circles: [CircleView]!
+    @IBOutlet private weak var circle1: CircleView!
+    @IBOutlet private weak var circle2: CircleView!
+    @IBOutlet private weak var circle3: CircleView!
+    @IBOutlet private weak var circle4: CircleView!
+    @IBOutlet private weak var circle5: CircleView!
+    @IBOutlet private weak var circle6: CircleView!
+    @IBOutlet private weak var circle7: CircleView!
+    @IBOutlet private var circles: [CircleView]!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    @IBAction func panCircle1Action(_ gesture: UIPanGestureRecognizer) {
     }
     
-    @IBAction func panCircle1Action(_ sender: UIPanGestureRecognizer) {
+    @IBAction func panCircle2Action(_ gesture: UIPanGestureRecognizer) {
     }
     
-    @IBAction func panCircle2Action(_ sender: UIPanGestureRecognizer) {
+    @IBAction func panCircle3Action(_ gesture: UIPanGestureRecognizer) {
     }
     
-    @IBAction func panCircle3Action(_ sender: UIPanGestureRecognizer) {
+    @IBAction func panCircle4Action(_ gesture: UIPanGestureRecognizer) {
     }
     
-    @IBAction func panCircle4Action(_ sender: UIPanGestureRecognizer) {
+    @IBAction func panCircle5Action(_ gesture: UIPanGestureRecognizer) {
+    }
+    
+    @IBAction func panCircle6Action(_ gesture: UIPanGestureRecognizer) {
+    }
+    
+    @IBAction func panCircle7Action(_ gesture: UIPanGestureRecognizer) {
     }
     
     @IBAction func panCircle5Action(_ sender: UIPanGestureRecognizer) {
