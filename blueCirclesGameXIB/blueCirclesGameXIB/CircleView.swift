@@ -15,6 +15,7 @@ import UIKit
         }
         set(curentValue) {
             circleLabel.text = String(curentValue)
+            circleLabel.font = UIFont.systemFont(ofSize: radius)
         }
     }
     
