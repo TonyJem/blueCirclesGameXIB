@@ -92,7 +92,7 @@ class ViewController: UIViewController {
     private func callGameDidFinishAlert() {
         
         let alert = UIAlertController(
-            title: "Congratulations, You did all !!!",
+            title: "Congratulations! \nYou did it all !!!",
             message: "Would you like to play that incredible game again?",
             preferredStyle: UIAlertController.Style.alert
         )
