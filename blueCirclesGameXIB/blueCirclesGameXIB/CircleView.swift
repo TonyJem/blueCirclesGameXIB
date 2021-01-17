@@ -7,14 +7,14 @@ class CircleView: UIView {
     private var workingView: UIView!
     private var xibName: String = "CircleView"
     
-    private var radius: CGFloat = 100
+    private var radius: CGFloat = 50
     
     private var area: CGFloat {
         return pow(radius, 2) * CGFloat.pi
     }
     
     private var absorbDistance: CGFloat {
-        return radius / 2
+        return radius
     }
     
     override init(frame: CGRect) {
@@ -63,7 +63,7 @@ class CircleView: UIView {
     private func setSize(with radius: CGFloat) {
         self.frame.size.width = radius * 2
         self.frame.size.height = radius * 2
-        self.layer.cornerRadius = radius
+        xibCircleBody.layer.cornerRadius = radius
     }
     
     private func setBackGroundColor(with newColor: UIColor) {
