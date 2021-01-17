@@ -84,8 +84,21 @@ class ViewController: UIViewController {
         for (index, circle) in activeCircles.enumerated() {
             if circle == view {
                 activeCircles.remove(at: index)
+                if activeCircles.count == 1 { callGameDidFinishAlert() }
                 break
             }
         }
+    }
+    
+    private func callGameDidFinishAlert() {
+        // create the alert
+        let alert = UIAlertController(title: "Congratulations, You did all !!!", message: "Would you like to play that incredible game again?", preferredStyle: UIAlertController.Style.alert)
+
+        // add the actions (buttons)
+        alert.addAction(UIAlertAction(title: "Play Again!", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
     }
 }
