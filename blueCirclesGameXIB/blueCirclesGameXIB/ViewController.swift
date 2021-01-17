@@ -104,6 +104,6 @@ class ViewController: UIViewController {
     }
     
     private func changeColor(for circle: CircleView) {
-        circle.backgroundColor = UIColor.blue
+        circle.setBackGroundColor(with: .blue)
     }
 }

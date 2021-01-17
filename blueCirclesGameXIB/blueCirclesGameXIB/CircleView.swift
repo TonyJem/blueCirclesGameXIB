@@ -2,6 +2,8 @@ import UIKit
 
 class CircleView: UIView {
     
+    @IBOutlet weak var xibCircleBody: UIView!
+    
     private var workingView: UIView!
     private var xibName: String = "CircleView"
     
