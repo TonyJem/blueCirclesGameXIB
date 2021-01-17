@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         activeCircles = circles
-//        roundCorners(for: activeCircles)
     }
     
     @IBAction func panCircle1Action(_ gesture: UIPanGestureRecognizer) {
