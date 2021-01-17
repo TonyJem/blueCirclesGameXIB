@@ -7,7 +7,11 @@ class CircleView: UIView {
     private var workingView: UIView!
     private var xibName: String = "CircleView"
     
-    private var radius: CGFloat = 50
+    private var radius: CGFloat = 50 {
+        didSet{
+            self.layer.zPosition += 5
+        }
+    }
     
     private var area: CGFloat {
         return pow(radius, 2) * CGFloat.pi
