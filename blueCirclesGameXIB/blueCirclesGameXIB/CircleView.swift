@@ -2,8 +2,8 @@ import UIKit
 
 class CircleView: UIView {
     
-    var workingView: UIView!
-    var xibName: String = "CircleView"
+    private var workingView: UIView!
+    private var xibName: String = "CircleView"
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -15,7 +15,7 @@ class CircleView: UIView {
         setCustomView()
     }
     
-    func getFromXib() -> UIView {
+    private func getFromXib() -> UIView {
         let bundle = Bundle(for: type(of: self))
         let xib = UINib(nibName: xibName, bundle: bundle)
         let view = xib.instantiate(withOwner: self, options: nil).first as! UIView
@@ -23,7 +23,7 @@ class CircleView: UIView {
         return view
     }
     
-    func setCustomView() {
+    private func setCustomView() {
         workingView = getFromXib()
         workingView.frame = bounds
         workingView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
