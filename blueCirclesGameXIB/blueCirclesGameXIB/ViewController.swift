@@ -40,7 +40,10 @@ class ViewController: UIViewController {
     @IBAction func panCircle7Action(_ gesture: UIPanGestureRecognizer) {
     }
     
-    @IBAction func panCircle5Action(_ sender: UIPanGestureRecognizer) {
+    private func roundCorners(for circles: [UIView]) {
+        for circle in circles {
+            circle.layer.cornerRadius = circle.frame.size.width / 2
+        }
     }
     
     @IBAction func panCircle6Action(_ sender: UIPanGestureRecognizer) {
