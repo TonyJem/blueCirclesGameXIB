@@ -92,6 +92,12 @@
                         <outlet property="circle6" destination="AOu-9g-Ajh" id="egZ-yX-IWI"/>
                         <outlet property="circle7" destination="JKM-P0-qXO" id="4eS-zS-I0Q"/>
                         <outletCollection property="circles" destination="ZKR-Pd-bse" collectionClass="NSMutableArray" id="VzJ-Dk-gTv"/>
+                        <outletCollection property="circles" destination="UZl-eN-kCX" collectionClass="NSMutableArray" id="GSF-Jd-dCm"/>
+                        <outletCollection property="circles" destination="5Hb-VA-9sJ" collectionClass="NSMutableArray" id="HSZ-X6-CRM"/>
+                        <outletCollection property="circles" destination="GhG-s7-u12" collectionClass="NSMutableArray" id="RAg-zC-I3c"/>
+                        <outletCollection property="circles" destination="yTh-ol-ROz" collectionClass="NSMutableArray" id="jgf-Ac-hXS"/>
+                        <outletCollection property="circles" destination="AOu-9g-Ajh" collectionClass="NSMutableArray" id="Jh7-QN-fkm"/>
+                        <outletCollection property="circles" destination="JKM-P0-qXO" collectionClass="NSMutableArray" id="uiM-pk-d7W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
