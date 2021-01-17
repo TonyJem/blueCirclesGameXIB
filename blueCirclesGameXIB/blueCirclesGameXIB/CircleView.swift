@@ -17,6 +17,7 @@ import UIKit
             circleLabel.text = String(curentValue)
         }
     }
+    
     @IBInspectable private var radius: CGFloat = 50 {
         didSet{
             self.frame.size.width = 2 * radius
@@ -72,6 +73,7 @@ import UIKit
         let commonArea = otherCircle.area + area
         let newRadius = (commonArea/CGFloat.pi).squareRoot()
         otherCircle.isHidden = true
+        addValue(from: otherCircle)
         setRadius(to: newRadius)
         setBackGroundColor(with: .blue)
     }
