@@ -55,10 +55,20 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                     </view>
+                    <connections>
+                        <outlet property="circle1" destination="ZKR-Pd-bse" id="Sfz-8F-q5u"/>
+                        <outlet property="circle2" destination="UZl-eN-kCX" id="oNf-wB-xb1"/>
+                        <outlet property="circle3" destination="5Hb-VA-9sJ" id="xy2-BP-pWz"/>
+                        <outlet property="circle4" destination="GhG-s7-u12" id="NIq-tg-ImL"/>
+                        <outlet property="circle5" destination="yTh-ol-ROz" id="lMw-vj-XoF"/>
+                        <outlet property="circle6" destination="AOu-9g-Ajh" id="egZ-yX-IWI"/>
+                        <outlet property="circle7" destination="JKM-P0-qXO" id="4eS-zS-I0Q"/>
+                        <outletCollection property="circles" destination="ZKR-Pd-bse" collectionClass="NSMutableArray" id="VzJ-Dk-gTv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="77" y="138"/>
+            <point key="canvasLocation" x="-67" y="-2"/>
         </scene>
     </scenes>
     <resources>
