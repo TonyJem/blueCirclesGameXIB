@@ -14,4 +14,26 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func panCircle1Action(_ sender: UIPanGestureRecognizer) {
+    }
+    
+    @IBAction func panCircle2Action(_ sender: UIPanGestureRecognizer) {
+    }
+    
+    @IBAction func panCircle3Action(_ sender: UIPanGestureRecognizer) {
+    }
+    
+    @IBAction func panCircle4Action(_ sender: UIPanGestureRecognizer) {
+    }
+    
+    @IBAction func panCircle5Action(_ sender: UIPanGestureRecognizer) {
+    }
+    
+    @IBAction func panCircle6Action(_ sender: UIPanGestureRecognizer) {
+    }
+    
+    @IBAction func panCircle7Action(_ sender: UIPanGestureRecognizer) {
+    }
+    
 }
