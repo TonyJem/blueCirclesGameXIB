@@ -18,31 +18,31 @@ class ViewController: UIViewController {
         activeCircles = circles
     }
     
-    @IBAction func panCircle1Action(_ gesture: UIPanGestureRecognizer) {
+    @IBAction private func panCircle1Action(_ gesture: UIPanGestureRecognizer) {
         move(circle1, with: gesture)
     }
     
-    @IBAction func panCircle2Action(_ gesture: UIPanGestureRecognizer) {
+    @IBAction private func panCircle2Action(_ gesture: UIPanGestureRecognizer) {
         move(circle2, with: gesture)
     }
     
-    @IBAction func panCircle3Action(_ gesture: UIPanGestureRecognizer) {
+    @IBAction private func panCircle3Action(_ gesture: UIPanGestureRecognizer) {
         move(circle3, with: gesture)
     }
     
-    @IBAction func panCircle4Action(_ gesture: UIPanGestureRecognizer) {
+    @IBAction private func panCircle4Action(_ gesture: UIPanGestureRecognizer) {
         move(circle4, with: gesture)
     }
     
-    @IBAction func panCircle5Action(_ gesture: UIPanGestureRecognizer) {
+    @IBAction private func panCircle5Action(_ gesture: UIPanGestureRecognizer) {
         move(circle5, with: gesture)
     }
     
-    @IBAction func panCircle6Action(_ gesture: UIPanGestureRecognizer) {
+    @IBAction private func panCircle6Action(_ gesture: UIPanGestureRecognizer) {
         move(circle6, with: gesture)
     }
     
-    @IBAction func panCircle7Action(_ gesture: UIPanGestureRecognizer) {
+    @IBAction private func panCircle7Action(_ gesture: UIPanGestureRecognizer) {
         move(circle7, with: gesture)
     }
     
