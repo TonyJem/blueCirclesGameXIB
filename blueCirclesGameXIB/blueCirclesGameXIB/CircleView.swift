@@ -7,6 +7,12 @@ class CircleView: UIView {
     private var workingView: UIView!
     private var xibName: String = "CircleView"
     
+    var circleBackgroundColor: UIColor = .clear {
+        didSet {
+            xibCircleBody.backgroundColor = circleBackgroundColor
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setCustomView()
@@ -33,4 +39,7 @@ class CircleView: UIView {
         addSubview(workingView)
     }
     
+    func setBackGroundColor(with newColor: UIColor) {
+        circleBackgroundColor = newColor
+    }
 }
