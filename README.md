@@ -1,0 +1,2 @@
+# blueCirclesGameXIB
+ iOS training project
