@@ -19,7 +19,7 @@ class CircleView: UIView {
         let bundle = Bundle(for: type(of: self))
         let xib = UINib(nibName: xibName, bundle: bundle)
         let view = xib.instantiate(withOwner: self, options: nil).first as! UIView
-        
+        view.layer.cornerRadius = view.frame.size.width / 2
         return view
     }
     
