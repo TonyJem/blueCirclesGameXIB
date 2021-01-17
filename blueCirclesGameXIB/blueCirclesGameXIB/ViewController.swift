@@ -83,10 +83,18 @@ class ViewController: UIViewController {
         for (index, circle) in activeCircles.enumerated() {
             if circle == view {
                 activeCircles.remove(at: index)
-                if activeCircles.count == 1 { callGameDidFinishAlert() }
+                if activeCircles.count == 1 {
+                    moveLastCircleToCenter()
+                    callGameDidFinishAlert()
+                }
                 break
             }
         }
+    }
+    
+    private func moveLastCircleToCenter() {
+        activeCircles[0].center.x = self.view.center.x
+        activeCircles[0].center.y = self.view.center.y
     }
     
     private func callGameDidFinishAlert() {
