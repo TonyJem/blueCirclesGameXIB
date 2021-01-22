@@ -85,7 +85,6 @@ class ViewController: UIViewController {
                 activeCircles.remove(at: index)
                 if activeCircles.count == 1 {
                     moveLastCircleToCenter()
-                    callGameDidFinishAlert()
                 }
                 break
             }
@@ -95,29 +94,5 @@ class ViewController: UIViewController {
     private func moveLastCircleToCenter() {
         activeCircles[0].center.x = self.view.center.x
         activeCircles[0].center.y = self.view.center.y
-    }
-    
-    private func callGameDidFinishAlert() {
-        
-        let alert = UIAlertController(
-            title: "Congratulations! \nYou did it all !!!",
-            message: "Would you like to play that incredible game again?",
-            preferredStyle: UIAlertController.Style.alert
-        )
-        
-        alert.addAction(UIAlertAction(
-            title: "Play Again!",
-            style: UIAlertAction.Style.default,
-            handler: { _ in
-                print("Play Again!")
-            }
-        ))
-        
-        alert.addAction(UIAlertAction(
-                            title: "Cancel",
-                            style: UIAlertAction.Style.cancel,
-                            handler: nil))
-        
-        self.present(alert, animated: true, completion: nil)
     }
 }

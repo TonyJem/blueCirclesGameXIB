@@ -1,6 +1,6 @@
 import UIKit
 
-@IBDesignable class CircleView: UIView {
+class CircleView: UIView {
     
     @IBOutlet private weak var xibCircleBody: UIView!
     @IBOutlet private weak var circleLabel: UILabel!
@@ -19,7 +19,7 @@ import UIKit
         }
     }
     
-    @IBInspectable private var radius: CGFloat = 50 {
+    private var radius: CGFloat = 50 {
         didSet{
             self.frame.size.width = 2 * radius
             self.frame.size.height = 2 * radius
